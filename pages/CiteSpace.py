@@ -1,12 +1,6 @@
 from dash import html
 import plotly.express as px
 
-import sys
-from pathlib import Path
-
-path = Path(sys.argv[0]).parent.joinpath('/assets/citespace/citespace.html')
-
-
 base_url = "/demo"
 
 layout = html.Div(
@@ -54,7 +48,7 @@ layout = html.Div(
                               ),
                      html.Div(className='',
                               children=[
-                                  html.Iframe(src=path, style={
+                                  html.Iframe(src="./assets/citespace/citespace.html", style={
                                       'height': '100%', "border-width": '0'}, className='cite-space'),
                               ])
                  ])

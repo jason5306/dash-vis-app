@@ -3,7 +3,6 @@ import plotly.express as px
 import sys
 from pathlib import Path
 
-path = Path(sys.argv[0]).parent.joinpath('/assets/citespace/citespace_cir.html')
 
 base_url = "/demo"
 
@@ -52,7 +51,7 @@ layout = html.Div(
                      html.Div(className='eight columns div-for-charts bg-grey',
                               children=[
                                   html.Div(style={'margin-top': '5rem'}),
-                                  html.Iframe(src=path, style={
+                                  html.Iframe(src="./assets/citespace/citespace_cir.html", style={
                                       'height': '100%', 'width': '100%', 'margin-left': '5rem', "border-width": '0'}),
                               ])
                  ])

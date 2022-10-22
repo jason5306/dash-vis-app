@@ -1,9 +1,17 @@
 from dash import Dash, html, dcc, Input, Output, callback
 from pages import index, ParallelCategories, TimeRiver, CiteSpaceCir, CiteSpace, WordCloud, PublicationMap
+import flask
 
-base_url = ""
-app = Dash(__name__, suppress_callback_exceptions=True, url_base_pathname=base_url+'/')
-server = app.server
+# base_url = ""
+# app = Dash(__name__, suppress_callback_exceptions=True, url_base_pathname=base_url+'/')
+# server = app.server
+
+
+server = flask.Flask(__name__)
+server.secret_key = os.environ.get('secret_key', str(randint(0, 1000000)))
+app = Dash(__name__, server=server)
+
+
 
 
 app.layout = html.Div([
@@ -33,5 +41,6 @@ def display_page(pathname):
         return '404 Not Found'
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+#     app.run_server(debug=False)
+      app.server.run(debug=True, threaded=True)   
      

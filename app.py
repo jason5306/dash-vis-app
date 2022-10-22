@@ -33,5 +33,5 @@ def display_page(pathname):
         return '404 Not Found'
 
 if __name__ == '__main__':
-    app.server.run(debug=False)
+    app.run_server(debug=False)
      

@@ -1,10 +1,7 @@
 from dash import html
 import plotly.express as px
 
-import sys
-from pathlib import Path
 
-path = Path(sys.argv[0]).parent.joinpath('/assets/citespace/citespace_index.html')
 
 base_url = "/demo"
 layout = html.Div(
@@ -47,7 +44,7 @@ layout = html.Div(
             ),
         ]),
         html.Div(id='', className='', children=[
-            html.Iframe(src=path,
+            html.Iframe(src="./assets/citespace/citespace_index.html",
                         className='poster-img', style={'height': '110%'}),
         ])
     ]

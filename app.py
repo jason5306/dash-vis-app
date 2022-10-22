@@ -1,7 +1,7 @@
 from dash import Dash, html, dcc, Input, Output, callback
 from pages import index, ParallelCategories, TimeRiver, CiteSpaceCir, CiteSpace, WordCloud, PublicationMap
 
-base_url = "/demo"
+base_url = ""
 app = Dash(__name__, suppress_callback_exceptions=True, url_base_pathname=base_url+'/')
 server = app.server
 

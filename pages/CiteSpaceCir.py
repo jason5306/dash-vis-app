@@ -1,8 +1,5 @@
 from dash import html
 import plotly.express as px
-import sys
-from pathlib import Path
-
 
 base_url = "/demo"
 

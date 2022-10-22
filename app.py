@@ -4,14 +4,14 @@ import flask
 import os
 from random import randint
 
-base_url = ""
+base_url = "/demo"
 # app = Dash(__name__, suppress_callback_exceptions=True, url_base_pathname=base_url+'/')
 # server = app.server
 
 
 server = flask.Flask(__name__)
 server.secret_key = os.environ.get('secret_key', str(randint(0, 1000000)))
-app = Dash(__name__, server=server)
+app = Dash(__name__, server=server,url_base_pathname=base_url+'/')
 
 
 

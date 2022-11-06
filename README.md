@@ -27,3 +27,4 @@ This is the code repository of our final group project of the STATS 401 Data Acq
 ## Acknowledgment
 
 This project is in association with [Haowen JI](https://github.com/Haowen-Ji) and Dunhan Jiang.
+This repository is licensed under MIT license.

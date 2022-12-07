@@ -4,7 +4,7 @@ This is the code repository of our final group project of the STATS 401 Data Acq
 
 ## Demo
 
-[Interactive Online Demo](https://dashvisproject.herokuapp.com/demo)
+[Interactive Online Demo](https://cv-model-dev-dash.onrender.com/demo)
 
 ## Full Project Report
 
